@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="15dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/avatar_detail"
+        app:civ_border_width="2.5dp"
+        app:civ_border_color="#FF9090"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/nama_detail"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="21dp"
+        android:layout_below="@id/avatar_detail"
+        android:text="@string/nama"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_namapengguna"
+        android:layout_below="@id/nama_detail"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:textSize="17sp"
+        android:maxLines="3"
+        android:text="@string/nama_pengguna"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail_repo"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toStartOf="@id/follow_detail"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/repo"
+        android:layout_alignBaseline="@id/follow_detail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/follow_detail"
+        android:layout_below="@id/detail_namapengguna"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/follow"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/following_detail"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@id/follow_detail"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/following"
+        android:layout_alignBaseline="@id/follow_detail"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/company_detail"
+        android:layout_below="@id/follow_detail"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/comp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lokasi_detail"
+        android:layout_below="@id/company_detail"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:text="@string/lokasi"
+        android:layout_centerHorizontal="true"
+        />
+    
+</RelativeLayout>
